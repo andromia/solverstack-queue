@@ -4,12 +4,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "hashicorp/precise64"
+  config.vm.box = "bento/ubuntu-16.04"
   
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = "512"
-  end
-
   config.vm.network :forwarded_port, guest: 7878, host: 7878
 
   config.vm.provision "shell", inline: <<-SHELL
