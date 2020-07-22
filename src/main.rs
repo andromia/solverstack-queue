@@ -1,3 +1,11 @@
+use std::net::TcpListener;
+
 fn main() {
-    println!("Test");
-  }
+    let listener = TcpListener::bind("0.0.0.0:5000").unwrap();
+
+    for stream in listener.incoming() {
+        let stream = stream.unwrap();
+
+        println!("Connection established!");
+    }
+}
