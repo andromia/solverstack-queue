@@ -1,0 +1,1 @@
+RUST_LOG="microservice=debug" cargo run

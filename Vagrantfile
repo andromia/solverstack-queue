@@ -12,7 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     apt-get update -y
     apt-get upgrade -y
     apt-get dist-upgrade -y
-    apt-get install -y python3-dev python3-wheel python3-setuptools python3-six python3-pip
     apt-get install build-essential -y
     apt-get install -y git vim curl
     echo 'curl https://sh.rustup.rs -sSf | sh -s -- -y;' | su vagrant
