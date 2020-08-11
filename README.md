@@ -1,3 +1,3 @@
-# solverstack-vrp-queue
+# solverstack-queue
 
-Rust microservice for managing vrp data queue activity for solverstack.
+Rust microservice for managing module data queue activity for solverstack.
